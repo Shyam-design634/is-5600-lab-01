@@ -14,3 +14,10 @@ body {
 }
 
 /* add styles here */
+header {
+   background-image: url('images/florence.jpg'); /* Ensure the correct path to your image */
+   background-size: cover;
+   background-position: center; /* Optional: To center the background */
+   width: 100%;
+   min-height: 600px;
+ }
