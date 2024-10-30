@@ -32,3 +32,23 @@ header {
    padding-top: 20px; 
  }
  
+ nav ul {
+   list-style-type: none; /* Removes bullets */
+   margin: 0;
+   padding: 0;
+   margin-left: 80px;
+ }
+ 
+ nav ul li {
+   display: inline-block; /* Makes the list items horizontal */
+   margin-right: 20px; /* Adds space between items */
+ }
+ 
+ nav ul li a {
+   text-decoration: none; /* Removes underline */
+   color: #333; /* Default color for links */
+ }
+ 
+ nav ul li a:visited {
+   color: #555; /* Color for visited links */
+ }
