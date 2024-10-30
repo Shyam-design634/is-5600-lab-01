@@ -21,3 +21,14 @@ header {
    width: 100%;
    min-height: 600px;
  }
+
+ nav {
+   background-image: url('images/logo.png'); /* Ensure the correct path to your logo image */
+   background-size: 60px;
+   background-repeat: no-repeat;
+   background-position: left center; /* Positions the logo to the left */
+   padding-left: 70px; /* Adds space for the logo, tweak if necessary */
+   height: 60px; /* Matches the logo size */
+   padding-top: 20px; 
+ }
+ 
