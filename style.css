@@ -52,3 +52,23 @@ header {
  nav ul li a:visited {
    color: #555; /* Color for visited links */
  }
+
+ nav ul li a:hover {
+   color: #0073e6; /* Color when hovered */
+ }
+ 
+ nav a {
+   color: #51279b;
+   text-decoration: none;
+   padding: 10px;
+   font-weight: 600;
+ }
+ 
+ nav a:visited {
+   color: #8662c7;
+ }
+ 
+ nav a:hover {
+   color: #8662c7;
+   text-decoration: underline;
+ }
