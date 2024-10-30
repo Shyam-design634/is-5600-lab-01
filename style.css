@@ -14,3 +14,145 @@ body {
 }
 
 /* add styles here */
+header {
+   background-image: url('images/florence.jpg'); /* Ensure the correct path to your image */
+   background-size: cover;
+   background-position: center; /* Optional: To center the background */
+   width: 100%;
+   min-height: 600px;
+ }
+
+ nav {
+   background-image: url('images/logo.png'); /* Ensure the correct path to your logo image */
+   background-size: 60px;
+   background-repeat: no-repeat;
+   background-position: left center; /* Positions the logo to the left */
+   padding-left: 70px; /* Adds space for the logo, tweak if necessary */
+   height: 60px; /* Matches the logo size */
+   padding-top: 20px; 
+ }
+ 
+ nav ul {
+   list-style-type: none; /* Removes bullets */
+   margin: 0;
+   padding: 0;
+   margin-left: 80px;
+ }
+ 
+ nav ul li {
+   display: inline-block; /* Makes the list items horizontal */
+   margin-right: 20px; /* Adds space between items */
+ }
+ 
+ nav ul li a {
+   text-decoration: none; /* Removes underline */
+   color: #333; /* Default color for links */
+ }
+ 
+ nav ul li a:visited {
+   color: #555; /* Color for visited links */
+ }
+
+ nav ul li a:hover {
+   color: #0073e6; /* Color when hovered */
+ }
+ 
+ nav a {
+   color: #51279b;
+   text-decoration: none;
+   padding: 10px;
+   font-weight: 600;
+ }
+ 
+ nav a:visited {
+   color: #8662c7;
+ }
+ 
+ nav a:hover {
+   color: #8662c7;
+   text-decoration: underline;
+ }
+
+ header div {
+   margin: 100px 0 0 80px;
+   color: white; /* we can use the cascading nature of CSS to set the color for all the elements within the div */
+}
+header h2 {
+ font-size: 48px;
+ margin-bottom: 0.5rem;
+}
+header p {
+ font-size: 24px;
+ margin-bottom: 1.5rem;
+}
+
+/* We can to target header.div.a because if we target simply a, then these styles will affect our navigation links as well */
+header div a {
+   background-color: #51279b;
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 5px;
+ }
+ 
+ header div a:hover {
+     background-color: #8662c7;
+ }
+
+/* Note we can use the .card class selector here, as a class has been assigned to the <section> elements. */
+.card {
+   float: left;
+   display: inline-block;
+   width: calc(33% - 10px);
+   margin: 10px 5px;
+   background-color: white;
+ }
+
+ .card div {
+   padding: 20px 5px;
+}
+
+.card img {
+   width: 100%;
+}
+
+.card div.description {
+   font-size: 12px;
+}
+
+.card h3 {
+   font-size: 14px;
+}
+
+.social {
+   margin-top: 1rem;
+   font-size: 12px;
+ }
+ 
+ .social span {
+   background-size: contain;
+   background-repeat: no-repeat;
+   padding-left: 25px;
+   margin-right: 10px; /* we could use use 1em here, but 10px is a bit more precise */
+ }
+ 
+ .social .heart {
+   background-image: url(./images/heart.png);
+ }
+ 
+ .social .comment {
+   background-image: url(./images/comment.png);
+ }
+
+ main {
+   display: flex;
+   flex-wrap: wrap; /* Allows cards to wrap to the next line */
+   gap: 5px; /* Optional: controls the space between cards */
+   justify-content: space-between; /* Distributes items evenly to remove gaps */
+ }
+ 
+ .card {
+   flex-basis: calc(33.333% - 20px); /* Adjusts width to remove right gap */
+   box-sizing: border-box; /* Ensures padding/border don’t affect the width */
+ }
+ 
