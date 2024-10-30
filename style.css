@@ -144,3 +144,15 @@ header div a {
    background-image: url(./images/comment.png);
  }
 
+ main {
+   display: flex;
+   flex-wrap: wrap; /* Allows cards to wrap to the next line */
+   gap: 5px; /* Optional: controls the space between cards */
+   justify-content: space-between; /* Distributes items evenly to remove gaps */
+ }
+ 
+ .card {
+   flex-basis: calc(33.333% - 20px); /* Adjusts width to remove right gap */
+   box-sizing: border-box; /* Ensures padding/border don’t affect the width */
+ }
+ 
